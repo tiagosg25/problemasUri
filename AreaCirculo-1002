@@ -9,10 +9,9 @@ public class Main {
         InputStreamReader ir = new InputStreamReader(System.in);
         BufferedReader in = new BufferedReader(ir);
 
-        int a = Integer.parseInt(in.readLine());
-        int b = Integer.parseInt(in.readLine());
-        int prod = a*b;
+        double raio = Double.parseDouble(in.readLine());
+        double area = 3.14159 * (Math.pow(raio,2));
 
-        System.out.println("PROD = "+prod);
+        System.out.printf("A=%.4f\n",area);
     }
 }
